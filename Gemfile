@@ -66,3 +66,8 @@ gem 'rails-controller-testing', group: [ :test ]
 
 # Protect Keys
 gem 'dotenv-rails', groups: [:development, :test]
+
+
+gem 'cloudinary'
+
+gem 'carrierwave', '~> 1.2'

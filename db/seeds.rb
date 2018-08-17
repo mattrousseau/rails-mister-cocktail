@@ -21,8 +21,16 @@ Cocktail.destroy_all
 
 puts "Create Cocktails"
 c1 = Cocktail.create(name: "Mojito")
+c1.remote_photo_url = "http://res.cloudinary.com/dls4bo2ix/image/upload/v1534502347/photo-1525385133512-2f3bdd039054.jpg"
+c1.save
+
 c2 = Cocktail.create(name: "Bloody Mary")
+c2.remote_photo_url = "http://res.cloudinary.com/dls4bo2ix/image/upload/v1534502347/photo-1525385133512-2f3bdd039054.jpg"
+c2.save
+
 c3 = Cocktail.create(name: "Caipirina")
+c3.remote_photo_url = "http://res.cloudinary.com/dls4bo2ix/image/upload/v1534502347/photo-1525385133512-2f3bdd039054.jpg"
+c3.save
 
 p Cocktail.all
 

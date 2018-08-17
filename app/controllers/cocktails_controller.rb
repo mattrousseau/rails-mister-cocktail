@@ -10,6 +10,7 @@ class CocktailsController < ApplicationController
   # GET /cocktails/1
   # GET /cocktails/1.json
   def show
+    @dose = Dose.new
     @doses = @cocktail.doses
   end
 
@@ -70,6 +71,6 @@ class CocktailsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def cocktail_params
-      params.require(:cocktail).permit(:name)
+      params.require(:cocktail).permit(:name, :photo)
     end
 end
